@@ -142,9 +142,30 @@
     font-weight: normal;
   }
   
+  .lessons {
+    display: flex;
+  }
+
   .lesson {
-    float: left;
-    width: 25%;
+    flex: auto;
+  }
+
+  @media(max-width: 1000px){
+      .lessons {
+        flex-wrap: wrap;
+      }
+      .lesson {
+        width: 50%;
+      }
+  }
+
+  @media(max-width:670px){
+      .lessons {
+        flex-direction: column;
+      }
+      .lesson {
+        margin: 0 auto;
+      }
   }
   
   .lesson-icon {
