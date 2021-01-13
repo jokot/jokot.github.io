@@ -148,24 +148,7 @@
 
   .lesson {
     flex: auto;
-  }
-
-  @media(max-width: 1000px){
-      .lessons {
-        flex-wrap: wrap;
-      }
-      .lesson {
-        width: 50%;
-      }
-  }
-
-  @media(max-width:670px){
-      .lessons {
-        flex-direction: column;
-      }
-      .lesson {
-        margin: 0 auto;
-      }
+    width: 25%;
   }
   
   .lesson-icon {
